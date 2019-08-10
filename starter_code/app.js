@@ -1,5 +1,6 @@
 const express = require('express');
 const hbs = require('hbs');
+const spotifyWebApi = require('spotify-web-api-node')
 
 // require spotify-web-api-node package here:
 
