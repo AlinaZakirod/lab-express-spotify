@@ -38,22 +38,10 @@ spotifyApi.clientCredentialsGrant()
 
 
 // the routes go here:
-app.get('/', (req,res,next) => {
+app.get('/home', (req,res,next) => {
   res.render('index');
 })
 
-
-spotifyApi.searchArtists('/artists', (req, res, next) => {
-    Artist.find({ name: req.query.data.body.Artist })
-      .then(data => { 
-      console.log("The received data from the API: ", data.body);
-      // ----> 'HERE WHAT WE WANT TO DO AFTER RECEIVING THE DATA FROM THE API'
-      })
-      .catch(err => {
-      console.log("The error while searching artists occurred: ", err);
-    })
-})
-   
 
 
 
