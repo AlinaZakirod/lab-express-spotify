@@ -1,10 +1,12 @@
-<h2>Artist info</h2>
+<h2>Hi there</h2>
+
 <div>
     {{#each data}}
     <ul>
         <li>{{this.name}}
             
-         <br> <img src="{{this.images.1.url}}" alt="image"> 
+         <br> 
+         <audio src="{{this.preview_url}}"></audio>
          <br>
          <a href="/albums/{{this.id}}">View Albums</a>
          </li>

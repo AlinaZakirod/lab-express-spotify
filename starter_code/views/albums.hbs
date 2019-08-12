@@ -1,0 +1,10 @@
+<h2>Albums</h2>
+<div>
+    {{#each albums}}
+    <ul>
+        <li>{{this.name}} <br>
+    <a href="/tracks/{{this.id}}">Tracks</a>
+    </li>
+    </ul>
+    {{/each}}
+</div>
